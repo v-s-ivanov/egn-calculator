@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Начало</title>
+</head>
+<body>
+    <label for="day">Ден: </label>
+    <input type="number" name="day" id="day" min="0" max="31">
+    <br><label for="month">Месец: </label>
+    <input type="number" name="month" id="month" min="0" max="12">
+    <br><label for="year">Година: </label>
+    <input type="number" name="year" id="year" min="0" max="2099">
+    <br><label for="oblast">Област: </label>
+    <input type="text" name="oblast" id="oblast">
+    <br><label for="male">Пол: </label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Мъж</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Жена</label>
+    <br><label for="birthOrder">Ред на раждане: </label>
+    <input type="number" name="birthOrder" id="birthOrder">
+    <br><button onclick="calculateEGN()">Изчисли ЕГН</button>
+
+    <h3>Възможни ЕГН-та:</h3>
+    <p id="result"></p>
+    <p>Забележка: За лица, родени преди създаването на ЕГН,
+        <br>редът на раждане не е приложим.
+        <br>Освен това, на тези лица може и да е
+        <br> било изчислено ЕГН по местоживеене през 1977, 
+        <br>а не по място на раждане, въпреки че това
+        <br>не е правилната практика.</p>
+    <script src="main.js"></script>
+</body>
+</html>
